@@ -1,4 +1,4 @@
-# addIconOnLinkHover
+# add icon on link hover
 
 ## HTML
 ```

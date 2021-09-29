@@ -1,0 +1,118 @@
+/* ------
+ Layout */
+
+html,
+body {
+    font-family: sans-serif;
+    height: 100%;
+    background-color: #283350;
+}
+
+html,
+body,
+h2,
+a {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+main,
+footer {
+    scroll-snap-align: start;
+    display: grid;
+    min-height: calc(100vh - 2px);
+    width: 100%;
+    place-items: center;
+    overflow: hidden;
+}
+
+main a {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+footer {
+    box-sizing: border-box;
+    border-top: solid 2px #F93800;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100%;
+}
+
+footer h2 {
+    letter-spacing: 1px;
+    max-width: 900px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+footer h2 strong,
+footer h2 small {
+    display: block;
+    padding-top: 1rem;
+}
+
+footer h2 strong {
+    text-align: center;
+}
+
+footer .social {
+    width: clamp(250px, 100%, 450px);
+    display: flex;
+    justify-content: space-evenly;
+    filter: invert(1);
+}
+
+footer a.logo img {
+    width: 150px;
+    padding: 0.2rem;
+}
+
+
+/* Layout 
+ ------ */
+
+
+/* ------
+ Code */
+
+a[target="_blank"] {
+    display: flex;
+    gap: 0.05rem;
+    opacity: 0.87;
+}
+
+a[target="_blank"]::after {
+    content: url(assets/icons/newTabs.svg);
+    opacity: 0.87;
+}
+
+@media screen and (min-width: 769px) {
+    a[target="_blank"]:hover {
+        opacity: 1;
+        text-shadow: 0 0 2px rgba(153, 153, 153, 0.74);
+    }
+    a[target="_blank"]::after {
+        opacity: 0;
+    }
+    a[target="_blank"]:hover::after {
+        opacity: 0.87;
+    }
+}
+
+
+/* Code 
+ ------ */
