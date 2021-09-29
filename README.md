@@ -1,14 +1,14 @@
 # addIconOnLinkHover
 
-
+## HTML
 ```
-<!-- HTML -->
 
 <a href="https://www.google.com" target="_blank">Open link in a new tab</a>
+
 ```      
 
+## CSS
 ```
-/* CSS  */
 
 a[target="_blank"] {
     display: flex;
@@ -37,4 +37,6 @@ a[target="_blank"]::after {
 ```
 
 ## Résultat
-
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/89663832/135282836-b7e8c3da-a47f-493a-9e6d-51d635039106.png">
+</p>
